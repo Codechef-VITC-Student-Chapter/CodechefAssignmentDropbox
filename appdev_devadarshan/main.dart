@@ -32,10 +32,10 @@ class _LoginPageState extends State<LoginPage> {
   void changeLoginButtonColor() {
     setState(() {
       if (loginButtonColor == Color(0xFF7C1176)) {
-        loginButtonColor = Colors.white; // Change to white on press
+        loginButtonColor = Colors.white; 
         textcolor=Color(0xff7c1176);
       } else {
-        loginButtonColor = Color(0xFF7C1176); // Revert to original color
+        loginButtonColor = Color(0xFF7C1176); 
         textcolor=Colors.white;
       }
 
@@ -44,10 +44,10 @@ class _LoginPageState extends State<LoginPage> {
   void changeRegisterButtonColor() {
     setState(() {
       if (RegisterButtonColor == Color(0xFF7C1176)) {
-        RegisterButtonColor = Colors.white; // Change to white on press
+        RegisterButtonColor = Colors.white; 
         Registertextcolor=Color(0xff7c1176);
       } else {
-        RegisterButtonColor = Color(0xFF7C1176); // Revert to original color
+        RegisterButtonColor = Color(0xFF7C1176);
         Registertextcolor=Colors.white;
       }
 
@@ -68,11 +68,11 @@ class _LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Color(0xFF3E2248), // Starting color #3e2248
-                    Color(0xFF7C1175), // Middle color #7c1175
-                    Color(0xFF3E2248), // Ending color #3e2248
+                    Color(0xFF3E2248), 
+                    Color(0xFF7C1175),
+                    Color(0xFF3E2248), 
                   ],
-                  stops: [0.0, 0.5, 1.0], // Adjust stops for smooth transition
+                  stops: [0.0, 0.5, 1.0], 
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Text(
                         'C O D E C H E F',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.4), // Slightly transparent white
+                          color: Colors.white.withOpacity(0.4),
                           fontSize: 35,
                           fontWeight: FontWeight.bold,
                         ),
@@ -97,17 +97,17 @@ class _LoginPageState extends State<LoginPage> {
                     padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
                     child: Center(
                       child: Container(
-                        //height: MediaQuery.of(context).size.height*0.5,
+                     
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey.withOpacity(0.3)), // White border
+                          border: Border.all(color: Colors.grey.withOpacity(0.3)),
                           borderRadius: BorderRadius.circular(15.0),
-                          color: Colors.grey.withOpacity(0.3), // Slightly grey and transparent
+                          color: Colors.grey.withOpacity(0.3),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20.0),
                         constraints: BoxConstraints(
                           maxWidth: MediaQuery.of(context).size.width * 0.7,
                         ),
-                        // Adjust max width as needed
+                       
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
